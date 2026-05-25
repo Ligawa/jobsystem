@@ -44,28 +44,28 @@ const focusAreas = [
 
 const latestStories = [
   {
-    title: "Empowering Women Entrepreneurs in Nigeria",
-    excerpt: "How small business support is transforming communities and creating economic opportunities for women across Nigeria.",
-    image: "/images/image-18-credit-undp-nigeria-amalachukwu-ibeneme-crop.jpg",
+    title: "Women's Rights Defenders Lead Global Campaign",
+    excerpt: "Amnesty International amplifies the voices of women fighting for equality, justice, and dignity worldwide.",
+    image: "/images/amnesty-womens-rights.jpg",
     date: "January 28, 2026",
     category: "Gender Equality",
-    slug: "empowering-women-nigeria",
+    slug: "womens-rights-defenders",
   },
   {
-    title: "Solar Power Brings Clean Water to Rural Afghanistan",
-    excerpt: "Renewable energy solutions are providing sustainable access to clean water for communities in remote areas.",
-    image: "/images/image-1-credit-undp-afghanistan.jpg",
+    title: "Global Activism Movements Demand Human Rights",
+    excerpt: "Communities around the world join Amnesty International in demanding justice, freedom, and accountability from governments.",
+    image: "/images/amnesty-freedom-march.jpg",
     date: "January 25, 2026",
-    category: "Climate Action",
-    slug: "solar-power-afghanistan",
+    category: "Human Rights",
+    slug: "global-activism-movements",
   },
   {
-    title: "Sustainable Agriculture in Cuba",
-    excerpt: "Supporting farmers with climate-smart practices to build resilient food systems and protect biodiversity.",
-    image: "/images/undp-cu-diosmara-farm-2025.jpg",
+    title: "Grassroots Campaigns Spark Real Change",
+    excerpt: "Local communities and activists work with Amnesty International to defend human rights and protect the vulnerable.",
+    image: "/images/amnesty-grassroots.jpg",
     date: "January 22, 2026",
-    category: "Environment",
-    slug: "sustainable-agriculture-cuba",
+    category: "Justice",
+    slug: "grassroots-campaigns-change",
   },
 ]
 
