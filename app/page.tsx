@@ -76,13 +76,13 @@ export default function HomePage() {
       <section className="relative min-h-[80vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/human-development-healthy-planet.jpg"
-            alt="Worker installing solar panels - representing sustainable development"
+            src="/images/amnesty-hero-background.jpg"
+            alt="Global activists and human rights defenders united for justice and freedom"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0468B1]/90 via-[#0468B1]/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-transparent" />
         </div>
         
         <div className="container relative z-10 mx-auto px-4 py-20">
@@ -94,13 +94,13 @@ export default function HomePage() {
               Amnesty International campaigns for justice, freedom, and dignity in every country and community we serve. We expose abuse, support survivors, and push for lasting change.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-white text-[#0468B1] hover:bg-white/90">
+              <Button asChild size="lg" className="bg-yellow-400 text-black hover:bg-yellow-300 font-semibold">
                 <Link href="/what-we-do">
                   Explore Our Work
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
+              <Button asChild size="lg" variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400/10 bg-transparent">
                 <Link href="/news">Latest Stories</Link>
               </Button>
             </div>
@@ -109,13 +109,13 @@ export default function HomePage() {
       </section>
 
       {/* Impact Stats */}
-      <section className="bg-[#0468B1] py-16">
+      <section className="bg-black py-16">
         <div className="container mx-auto px-4">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {impactStats.map((stat) => (
               <div key={stat.label} className="text-center text-white">
-                <stat.icon className="mx-auto h-10 w-10 mb-4 opacity-80" />
-                <div className="text-4xl font-bold md:text-5xl">{stat.value}</div>
+                <stat.icon className="mx-auto h-10 w-10 mb-4 text-yellow-400" />
+                <div className="text-4xl font-bold md:text-5xl text-yellow-400">{stat.value}</div>
                 <div className="mt-2 text-sm uppercase tracking-wide text-white/80">{stat.label}</div>
               </div>
             ))}
@@ -193,7 +193,7 @@ export default function HomePage() {
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="absolute top-4 left-4">
-                      <span className="rounded-full bg-[#0468B1] px-3 py-1 text-xs font-semibold text-white">
+                      <span className="rounded-full bg-yellow-400 px-3 py-1 text-xs font-semibold text-black">
                         {story.category}
                       </span>
                     </div>
@@ -237,13 +237,13 @@ export default function HomePage() {
                 poverty reduction worldwide.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
-                <Button asChild className="bg-[#0468B1] hover:bg-[#035a9c]">
+                <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-300 font-semibold">
                   <Link href="/resources/mpi-2025">
                     Read the Report
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline">
+                <Button asChild variant="outline" className="border-yellow-400 text-yellow-600 hover:bg-yellow-50">
                   <Link href="/resources">Browse All Publications</Link>
                 </Button>
               </div>
@@ -253,10 +253,10 @@ export default function HomePage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-16 lg:py-24 bg-[#0468B1]">
+      <section className="py-16 lg:py-24 bg-black border-t-4 border-yellow-400">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-2xl text-center text-white">
-            <h2 className="text-3xl font-bold md:text-4xl">Stay Connected</h2>
+            <h2 className="text-3xl font-bold md:text-4xl text-yellow-400">Stay Connected</h2>
             <p className="mt-4 text-lg text-white/90">
               Subscribe to our newsletter for the latest news, stories, and updates on our work around the world.
             </p>
@@ -264,10 +264,10 @@ export default function HomePage() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 rounded-md border-0 bg-white/10 px-4 py-3 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white"
+                className="flex-1 rounded-md border-2 border-yellow-400 bg-transparent px-4 py-3 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 required
               />
-              <Button type="submit" className="bg-white text-[#0468B1] hover:bg-white/90 px-8">
+              <Button type="submit" className="bg-yellow-400 text-black hover:bg-yellow-300 font-semibold px-8">
                 Subscribe
               </Button>
             </form>
