@@ -47,7 +47,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/images/amnesty-logo.svg"
+              src="/images/amnesty-logo-yellow.png"
               alt="Amnesty International logo"
               className="h-12 w-auto"
             />

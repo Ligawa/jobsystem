@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   description: 'Amnesty International campaigns for justice, freedom, and dignity for people everywhere.',
   keywords: ['Amnesty International', 'human rights', 'justice', 'freedom', 'accountability', 'campaigning'],
   icons: {
-    icon: '/images/amnesty-logo.svg',
-    shortcut: '/images/amnesty-logo.svg',
-    apple: '/images/amnesty-logo.svg',
+    icon: '/images/amnesty-logo-yellow.png',
+    shortcut: '/images/amnesty-logo-yellow.png',
+    apple: '/images/amnesty-logo-yellow.png',
   },
   openGraph: {
     title: 'Amnesty International',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: 'Amnesty International',
     images: [
       {
-        url: '/images/amnesty-logo.svg',
+        url: '/images/amnesty-logo-yellow.png',
         width: 1200,
         height: 630,
         alt: 'Amnesty International',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Amnesty International',
     description: 'Campaigning for justice, freedom, and dignity around the world.',
-    images: ['/images/amnesty-logo.svg'],
+    images: ['/images/amnesty-logo-yellow.png'],
   },
     generator: 'v0.app'
 }
