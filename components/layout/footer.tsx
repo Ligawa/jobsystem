@@ -39,16 +39,16 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-[#0468B1] text-white">
+    <footer className="border-t border-border bg-[#000000] text-white">
       <div className="container mx-auto px-4 py-12 lg:py-16">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Logo and Description */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
               <img
-                src="/images/amnesty-logo.svg"
+                src="/images/amnesty-logo-yellow.png"
                 alt="Amnesty International logo"
-                className="h-16 w-auto rounded bg-white p-2"
+                className="h-16 w-auto rounded bg-black p-2"
               />
             </Link>
             <p className="mt-4 text-sm text-white/80">
