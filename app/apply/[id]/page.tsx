@@ -175,7 +175,7 @@ export default function ApplicationSubmissionPage({ params }: { params: Promise<
                 <h2 className="text-xl font-bold text-red-800">Unable to Load Application</h2>
               </div>
               <p className="text-red-700 mb-4">{error}</p>
-              <p className="text-red-700">Please contact our careers team for assistance: careers@unoedp.org</p>
+              <p className="text-red-700">Please contact our careers team for assistance: careers@amnesty.org</p>
             </CardContent>
           </Card>
         </div>
@@ -413,7 +413,7 @@ export default function ApplicationSubmissionPage({ params }: { params: Promise<
             <CardContent className="pt-6">
               <p className="text-sm text-blue-900">
                 <strong>Need help?</strong> If you have any questions about submitting your application materials,
-                please contact us at <a href="mailto:careers@unoedp.org" className="underline font-semibold">careers@unoedp.org</a>
+                please contact us at <a href="mailto:careers@amnesty.org" className="underline font-semibold">careers@amnesty.org</a>
               </p>
             </CardContent>
           </Card>

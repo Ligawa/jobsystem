@@ -12,35 +12,35 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   title: {
-    default: 'UNEDP | UN Economic Development Programme',
-    template: '%s | UNEDP'
+    default: 'Amnesty International',
+    template: '%s | Amnesty International'
   },
-  description: 'UNEDP works globally to promote sustainable economic development, reduce poverty and inequality, and build resilient economies for a better future.',
-  keywords: ['UNEDP', 'United Nations', 'economic development', 'sustainable development', 'poverty reduction', 'development programme', 'global development'],
+  description: 'Amnesty International campaigns for justice, freedom, and dignity for people everywhere.',
+  keywords: ['Amnesty International', 'human rights', 'justice', 'freedom', 'accountability', 'campaigning'],
   icons: {
-    icon: '/images/unedp-logo.jpg',
-    shortcut: '/images/unedp-logo.jpg',
-    apple: '/images/unedp-logo.jpg',
+    icon: '/images/amnesty-logo.svg',
+    shortcut: '/images/amnesty-logo.svg',
+    apple: '/images/amnesty-logo.svg',
   },
   openGraph: {
-    title: 'UNEDP | UN Economic Development Programme',
-    description: 'Promoting sustainable economic development and reducing poverty worldwide.',
+    title: 'Amnesty International',
+    description: 'Campaigning for justice, freedom, and dignity around the world.',
     type: 'website',
-    siteName: 'UNEDP',
+    siteName: 'Amnesty International',
     images: [
       {
-        url: '/images/unedp-logo.jpg',
+        url: '/images/amnesty-logo.svg',
         width: 1200,
         height: 630,
-        alt: 'UN Economic Development Programme',
+        alt: 'Amnesty International',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UNEDP | UN Economic Development Programme',
-    description: 'Promoting sustainable economic development and reducing poverty worldwide.',
-    images: ['/images/unedp-logo.jpg'],
+    title: 'Amnesty International',
+    description: 'Campaigning for justice, freedom, and dignity around the world.',
+    images: ['/images/amnesty-logo.svg'],
   },
     generator: 'v0.app'
 }

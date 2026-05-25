@@ -213,14 +213,14 @@ export default function OfferSignaturePage() {
       applicantName: letter.applicant_name,
       applicantEmail: letter.applicant_email,
       jobTitle: letter.job_title,
-      reportingStation: letter.reporting_station,
+      reportingStation: letter.reporting_station ?? undefined,
       contractType: letter.contract_type,
-      gradeLevel: letter.grade_level,
+      gradeLevel: letter.grade_level ?? undefined,
       expectedStartDate: letter.expected_start_date,
       contractDuration: letter.contract_duration,
       acceptanceDeadline: letter.acceptance_deadline,
-      salaryNotes: letter.salary_notes,
-      customClauses: letter.custom_clauses,
+      salaryNotes: letter.salary_notes ?? undefined,
+      customClauses: letter.custom_clauses ?? undefined,
       includeSsafeIfak: letter.include_ssafe_ifak,
       // Include signature data if the letter has been signed
       ...(signed && savedSignatureData ? {
@@ -243,14 +243,14 @@ export default function OfferSignaturePage() {
         applicantName: letter.applicant_name,
         applicantEmail: letter.applicant_email,
         jobTitle: letter.job_title,
-        reportingStation: letter.reporting_station,
+        reportingStation: letter.reporting_station ?? undefined,
         contractType: letter.contract_type,
-        gradeLevel: letter.grade_level,
+        gradeLevel: letter.grade_level ?? undefined,
         expectedStartDate: letter.expected_start_date,
         contractDuration: letter.contract_duration,
         acceptanceDeadline: letter.acceptance_deadline,
-        salaryNotes: letter.salary_notes,
-        customClauses: letter.custom_clauses,
+        salaryNotes: letter.salary_notes ?? undefined,
+        customClauses: letter.custom_clauses ?? undefined,
         includeSsafeIfak: letter.include_ssafe_ifak,
         ...(signed && savedSignatureData ? {
           signatureData: savedSignatureData,
@@ -375,7 +375,7 @@ export default function OfferSignaturePage() {
         <Card className="w-full max-w-md">
           <CardContent className="pt-6">
             <p className="text-red-600 font-semibold mb-4">{error}</p>
-            <p className="text-muted-foreground mb-6">Please contact UNEDF HR at careers@unoedp.org if you need assistance.</p>
+            <p className="text-muted-foreground mb-6">Please contact Amnesty International HR at careers@amnesty.org if you need assistance.</p>
             <Button className="w-full" variant="outline">Back to Home</Button>
           </CardContent>
         </Card>
@@ -394,7 +394,7 @@ export default function OfferSignaturePage() {
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold">UNEDF</span>
+              <span className="text-white font-bold">AI</span>
             </div>
             <div>
               <h1 className="text-3xl font-bold">Employment Offer Letter</h1>
@@ -467,14 +467,14 @@ export default function OfferSignaturePage() {
                           applicantName: letter.applicant_name,
                           applicantEmail: letter.applicant_email,
                           jobTitle: letter.job_title,
-                          reportingStation: letter.reporting_station,
+                          reportingStation: letter.reporting_station ?? undefined,
                           contractType: letter.contract_type,
-                          gradeLevel: letter.grade_level,
+                          gradeLevel: letter.grade_level ?? undefined,
                           expectedStartDate: letter.expected_start_date,
                           contractDuration: letter.contract_duration,
                           acceptanceDeadline: letter.acceptance_deadline,
-                          salaryNotes: letter.salary_notes,
-                          customClauses: letter.custom_clauses,
+                          salaryNotes: letter.salary_notes ?? undefined,
+                          customClauses: letter.custom_clauses ?? undefined,
                           includeSsafeIfak: letter.include_ssafe_ifak,
                         }, false)
                       }}

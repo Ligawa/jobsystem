@@ -17,9 +17,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Careers at UNEDF",
+  title: "Careers at Amnesty International",
   description:
-    "Join UNEDF and make a difference. Explore career opportunities with the United Nations Economic Development Foundation.",
+    "Join Amnesty International and defend human rights worldwide. Explore career opportunities with a global movement for justice.",
 };
 
 const benefits = [
@@ -79,9 +79,8 @@ export default async function CareersPage() {
               Join Our Mission
             </h1>
             <p className="mt-6 text-lg text-white/90 md:text-xl leading-relaxed">
-              Be part of a global team working to promote sustainable economic
-              development and create lasting change in communities around the
-              world.
+              Be part of a global movement defending human rights, supporting
+              survivors, and pushing for justice in every region of the world.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a href="#openings">
@@ -111,10 +110,11 @@ export default async function CareersPage() {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">Why Join UNEDP?</h2>
+            <h2 className="text-3xl font-bold md:text-4xl">Why Join Amnesty International?</h2>
             <p className="mt-4 text-muted-foreground">
-              At UNEDP, you will have the opportunity to contribute to
-              meaningful work that shapes the future of sustainable development.
+              At Amnesty International, you will contribute to work that protects
+              dignity, exposes abuse, and helps deliver justice for people around
+              the world.
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -228,7 +228,7 @@ export default async function CareersPage() {
               {jobs?.length || 0} Open Positions
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
-              Explore all available roles and find the perfect opportunity to advance your career with UNEDF.
+              Explore all available roles and find the perfect opportunity to advance your career with Amnesty International.
             </p>
           </div>
 
@@ -301,9 +301,8 @@ export default async function CareersPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold">Ready to Make an Impact?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-white/90">
-            Join thousands of professionals who have chosen to build their
-            careers at UNEDP and contribute to sustainable development
-            worldwide.
+            Join professionals who are using their skills to defend human rights,
+            support survivors, and push for justice around the world.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a href="#openings">
@@ -317,7 +316,7 @@ export default async function CareersPage() {
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-primary bg-transparent"
               >
-                About UNEDP
+                About Amnesty International
               </Button>
             </Link>
           </div>

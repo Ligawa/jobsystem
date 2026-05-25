@@ -115,7 +115,7 @@ export function CountriesClient({
                     </CardHeader>
                     <CardContent>
                       <CardDescription className="line-clamp-2 text-sm leading-relaxed">
-                        {country.description || "UNEDF programs in this country."}
+                        {country.description || "Amnesty International programs in this country."}
                       </CardDescription>
                       <div className="mt-4 flex items-center gap-1 text-xs text-muted-foreground">
                         <MapPin className="h-3 w-3" />
@@ -147,7 +147,7 @@ export function CountriesClient({
                   <CardContent>
                     <p className="mb-4 text-muted-foreground">
                       {countryCount[region.id] || 0} countries and territories
-                      with active UNEDF programs.
+                      with active Amnesty International programs.
                     </p>
                     <Button
                       variant="outline"

@@ -88,12 +88,10 @@ export default function HomePage() {
         <div className="container relative z-10 mx-auto px-4 py-20">
           <div className="max-w-2xl text-white">
             <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl text-balance">
-              Building a Better Future for People and Planet
+              Defending Human Rights Around the World
             </h1>
             <p className="mt-6 text-lg text-white/90 md:text-xl leading-relaxed">
-              The UN Economic Development Programme works in about 170 countries and territories, 
-              helping to promote sustainable economic development, reduce poverty and inequality, 
-              and build resilient economies for a better future.
+              Amnesty International campaigns for justice, freedom, and dignity in every country and community we serve. We expose abuse, support survivors, and push for lasting change.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-white text-[#0468B1] hover:bg-white/90">
@@ -131,16 +129,13 @@ export default function HomePage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
               <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance">
-                Driving Progress on the Sustainable Development Goals
+                Advancing Human Rights Through Action
               </h2>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                UNEDP is committed to advancing sustainable development globally. We help countries build and share solutions 
-                to achieve the 17 Sustainable Development Goals, working across the interconnected challenges of 
-                poverty, inequality, climate change, and governance.
+                Amnesty International investigates abuse, supports people in danger, and campaigns for change wherever human rights are under threat. Our work spans research, advocacy, and direct support for communities around the world.
               </p>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                By 2030, we aim to eradicate extreme poverty, reduce inequality, and achieve sustainable development 
-                across all nations.
+                We stand with people facing repression, violence, and injustice, and we push governments and institutions to uphold their responsibilities.
               </p>
               <Button asChild className="mt-6 bg-[#0468B1] hover:bg-[#035a9c]">
                 <Link href="/what-we-do">
@@ -152,7 +147,7 @@ export default function HomePage() {
             <div className="flex justify-center">
               <Image
                 src="/images/sdg-wheel.svg"
-                alt="UN Sustainable Development Goals Wheel"
+                alt="Human rights campaign illustration"
                 width={400}
                 height={400}
                 className="w-full max-w-md"
@@ -309,7 +304,7 @@ export default function HomePage() {
               </Button>
             </form>
             <p className="mt-4 text-sm text-white/70">
-              By subscribing, you agree to receive communications from UNEDP. You can unsubscribe at any time.
+              By subscribing, you agree to receive communications from Amnesty International. You can unsubscribe at any time.
             </p>
           </div>
         </div>

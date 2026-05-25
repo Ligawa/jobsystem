@@ -47,8 +47,8 @@ export default function SetupLayout({
           <div className="flex h-16 items-center border-b px-6">
             <Link href="/setup" className="flex items-center gap-2">
               <img
-                src="/images/unedf-logo.jpg"
-                alt="UNEDF Logo"
+                src="/images/amnesty-logo.svg"
+                alt="Amnesty International Logo"
                 className="h-8 w-auto"
               />
               <span className="font-semibold text-primary">Admin</span>

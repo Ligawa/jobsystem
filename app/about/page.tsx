@@ -6,8 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About UNEDP | United Nations Development Programme",
-  description: "Learn about UNEDP's mission, vision, history, and leadership. Working in 170+ countries to eradicate poverty and build sustainable development.",
+  title: "About Amnesty International",
+  description: "Learn about Amnesty International's mission, history, and work defending human rights and demanding justice worldwide.",
 }
 
 const coreValues = [
@@ -30,38 +30,38 @@ const coreValues = [
 
 const leadership = [
   {
-    name: "Achim Steiner",
-    role: "Administrator",
+    name: "Amnesty International Leadership",
+    role: "Global Team",
     image: "/images/adc-bio.jpg",
-    bio: "The Administrator of UNEDP leads the organization's global mission to eradicate poverty and reduce inequalities through sustainable development.",
+    bio: "Amnesty International's global team campaigns for human rights, supports survivors of abuse, and pushes institutions to uphold justice and dignity.",
   },
 ]
 
 const timeline = [
   {
-    year: "1965",
-    title: "UNEDP Established",
-    description: "The United Nations Development Programme was created by merging the UN Expanded Programme of Technical Assistance and the UN Special Fund.",
+    year: "1961",
+    title: "Amnesty International Founded",
+    description: "Amnesty International was founded to defend people wherever justice is denied and human rights are under threat.",
   },
   {
-    year: "1990",
-    title: "First Human Development Report",
-    description: "UNEDP published the first Human Development Report, introducing a new way of measuring development beyond income.",
+    year: "1977",
+    title: "The Nobel Peace Prize",
+    description: "Amnesty International was awarded the Nobel Peace Prize for its work promoting human rights and ending abuse.",
   },
   {
-    year: "2000",
-    title: "Millennium Development Goals",
-    description: "UNEDP played a central role in the creation and implementation of the Millennium Development Goals.",
+    year: "1998",
+    title: "International Campaigning",
+    description: "Our global campaigns expanded to support survivors, expose abuse, and challenge governments around the world.",
   },
   {
-    year: "2015",
-    title: "Sustainable Development Goals",
-    description: "UNEDP became the lead UN agency for the 2030 Agenda and the 17 Sustainable Development Goals.",
+    year: "2020",
+    title: "Digital Advocacy",
+    description: "Amnesty International strengthened its global advocacy and rapid response work with digital tools and community-led campaigns.",
   },
   {
     year: "2025",
-    title: "60 Years of Impact",
-    description: "Celebrating six decades of global development work and looking forward to accelerating progress toward 2030.",
+    title: "Human Rights in Action",
+    description: "Today, Amnesty International continues to defend dignity, demand accountability, and mobilize people everywhere for justice.",
   },
 ]
 
@@ -73,12 +73,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl text-white">
             <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl text-balance">
-              About UNEDP
+              About Amnesty International
             </h1>
             <p className="mt-6 text-xl text-white/90 leading-relaxed">
-              The United Nations Development Programme works in about 170 countries and territories, 
-              helping to eradicate poverty, reduce inequalities and exclusion, and build resilience 
-              so countries can sustain progress.
+              Amnesty International works in every region of the world to protect people from abuse, expose injustice, and demand accountability from those in power.
             </p>
           </div>
         </div>
@@ -94,18 +92,13 @@ export default function AboutPage() {
                 <span className="text-sm font-semibold uppercase tracking-wider">Our Mission</span>
               </div>
               <h2 className="mt-4 text-3xl font-bold text-foreground md:text-4xl text-balance">
-                Eradicating Poverty. Reducing Inequalities. Building Resilience.
+                Defending Human Rights. Protecting Dignity. Demanding Justice.
               </h2>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                UNEDP helps countries develop strong policies, skills, partnerships and institutions 
-                so they can sustain their progress. We are on the ground in about 170 countries and 
-                territories, working with governments and people on their own solutions to global 
-                and national development challenges.
+                Amnesty International works with communities, partners, and supporters to expose abuse and challenge systems that deny people their rights. We put pressure on governments and institutions to act, while standing with individuals and families affected by injustice.
               </p>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                As the UN's lead agency on sustainable development, UNEDP is uniquely positioned to 
-                help implement the Sustainable Development Goals through our work in some 170 countries 
-                and territories.
+                Our campaigns, research, and advocacy help ensure that people everywhere can live with freedom, safety, and the right to be heard.
               </p>
             </div>
             <div className="flex flex-col justify-center rounded-2xl bg-muted/50 p-8 lg:p-12">
@@ -114,12 +107,10 @@ export default function AboutPage() {
                 <span className="text-sm font-semibold uppercase tracking-wider">Our Vision</span>
               </div>
               <h3 className="mt-4 text-2xl font-bold text-foreground md:text-3xl text-balance">
-                A World Without Poverty
+                A World Where Rights Are Protected
               </h3>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                We envision a world where no one is left behind—where poverty is eradicated, 
-                inequalities are reduced, and all people can live with dignity, opportunity, 
-                and hope for a better future.
+                We envision a world where every person can live free from fear, discrimination, and abuse—where dignity is respected and justice is reachable for all.
               </p>
               <div className="mt-8 grid grid-cols-3 gap-4 text-center">
                 <div>
@@ -176,17 +167,15 @@ export default function AboutPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
               <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance">
-                60 Years of Global Development
+                A Legacy of Human Rights Action
               </h2>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                Since 1965, UNEDP has been at the forefront of the global development agenda, 
-                adapting to changing challenges while maintaining our core commitment to 
-                sustainable human development.
+                Since 1961, Amnesty International has been at the forefront of the global human rights movement, adapting to new threats while staying faithful to the protection of dignity and justice.
               </p>
               <div className="relative mt-8 aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/images/UNEDP60-crop.jpg"
-                  alt="UNEDP founding in 1965"
+                  src="/images/undp60-crop.jpg"
+                  alt="Amnesty International history"
                   fill
                   className="object-cover"
                 />

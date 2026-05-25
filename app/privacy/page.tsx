@@ -3,8 +3,8 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Policy - UNEDP",
-  description: "Privacy policy for UN Economic Development Programme",
+  title: "Privacy Policy - Amnesty International",
+  description: "Privacy policy for Amnesty International",
 };
 
 export default function PrivacyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-900">1. Introduction</h2>
               <p className="text-gray-700">
-                The UN Economic Development Programme (UNEDP) respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and protect your information when you visit our website and use our services.
+                Amnesty International respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and protect your information when you visit our website and use our services.
               </p>
             </section>
 
@@ -70,7 +70,7 @@ export default function PrivacyPage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-900">6. Contact Us</h2>
               <p className="text-gray-700">
-                If you have questions about this Privacy Policy or our privacy practices, please contact us at privacy@unedp.org
+                If you have questions about this Privacy Policy or our privacy practices, please contact us at privacy@amnesty.org
               </p>
             </section>
 

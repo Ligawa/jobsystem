@@ -80,7 +80,7 @@ export default async function SetupDashboard() {
       <div>
         <h1 className="text-3xl font-bold text-foreground">Admin Dashboard</h1>
         <p className="mt-2 text-muted-foreground">
-          Manage your UNEDF website content
+          Manage your Amnesty International website content
         </p>
       </div>
 
@@ -149,7 +149,7 @@ export default async function SetupDashboard() {
           </CardHeader>
           <CardContent className="space-y-4 text-sm text-muted-foreground">
             <p>
-              Welcome to the UNEDF Admin Dashboard. From here you can manage all
+              Welcome to the Amnesty International Admin Dashboard. From here you can manage all
               content on your website.
             </p>
             <ul className="list-inside list-disc space-y-2">

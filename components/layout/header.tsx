@@ -46,14 +46,14 @@ export function Header() {
         <div className="flex h-16 items-center justify-between lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <img 
-              src="/images/unedp-logo.jpg" 
-              alt="UN Economic Development Programme Logo" 
+            <img
+              src="/images/amnesty-logo.svg"
+              alt="Amnesty International logo"
               className="h-12 w-auto"
             />
             <div className="hidden flex-col sm:flex">
-              <span className="text-xs font-semibold text-primary">UN Economic Development Programme</span>
-              <span className="text-lg font-bold text-primary">UNEDP</span>
+              <span className="text-xs font-semibold text-primary">Amnesty International</span>
+              <span className="text-lg font-bold text-primary">Defending Rights</span>
             </div>
           </Link>
 

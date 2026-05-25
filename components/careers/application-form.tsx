@@ -305,8 +305,9 @@ export function ApplicationForm({ jobId, jobTitle }: ApplicationFormProps) {
           </Button>
 
           <p className="text-center text-xs text-muted-foreground">
-            By submitting, you agree to our privacy policy and consent to UNEDF
-            processing your data for recruitment purposes.
+            By submitting, you agree to our privacy policy and consent to
+            Amnesty International processing your data for recruitment
+            purposes.
           </p>
         </form>
       </CardContent>

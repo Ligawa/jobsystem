@@ -6,8 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "What We Do | UNEDP",
-  description: "Explore UNEDP's work across sustainable development, climate action, governance, gender equality, and crisis response.",
+  title: "What We Do | Amnesty International",
+  description: "Explore Amnesty International's work defending human rights, supporting communities, and campaigning for justice worldwide.",
 }
 
 const thematicAreas = [
@@ -114,8 +114,7 @@ export default function WhatWeDoPage() {
               What We Do
             </h1>
             <p className="mt-6 text-xl text-white/90 leading-relaxed">
-              UNEDP works across multiple interconnected areas to help countries achieve the 
-              Sustainable Development Goals and leave no one behind.
+              Amnesty International works across research, advocacy, and rapid response to defend rights, support communities, and demand justice around the world.
             </p>
           </div>
         </div>
@@ -127,16 +126,13 @@ export default function WhatWeDoPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
               <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance">
-                Integrated Solutions for Complex Challenges
+                Integrated Action for Human Rights
               </h2>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                Today's development challenges are interconnected. Poverty, climate change, 
-                inequality, and weak governance reinforce each other. That's why UNEDP takes 
-                an integrated approach, working across sectors to maximize impact.
+                Human rights challenges are interconnected. Repression, discrimination, abuse, and impunity reinforce one another. That's why Amnesty International takes an integrated approach, combining research, campaigning, and direct support to maximize impact.
               </p>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                Our presence in over 170 countries gives us unique insight into local contexts, 
-                while our global network enables us to share knowledge and scale solutions that work.
+                Our global network gives us unique insight into local contexts while allowing us to scale practical solutions and sustained advocacy.
               </p>
             </div>
             <div className="flex justify-center">
@@ -188,7 +184,7 @@ export default function WhatWeDoPage() {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-foreground md:text-4xl">Our Focus Areas</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Explore the key thematic areas where UNEDP is driving sustainable development impact.
+              Explore the key thematic areas where Amnesty International is driving change and protecting human rights.
             </p>
           </div>
 

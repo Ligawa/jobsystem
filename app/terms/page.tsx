@@ -3,8 +3,8 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
-  title: "Terms of Use - UNEDP",
-  description: "Terms of Use for UN Economic Development Programme",
+  title: "Terms of Use - Amnesty International",
+  description: "Terms of Use for Amnesty International",
 };
 
 export default function TermsPage() {
@@ -30,7 +30,7 @@ export default function TermsPage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-900">2. Use License</h2>
               <p className="text-gray-700">
-                Permission is granted to temporarily download one copy of the materials (information or software) on UNEDP's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                Permission is granted to temporarily download one copy of the materials (information or software) on Amnesty International's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
                 <li>Modify or copy the materials</li>
@@ -44,35 +44,35 @@ export default function TermsPage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-900">3. Disclaimer</h2>
               <p className="text-gray-700">
-                The materials on UNEDP's website are provided "as is". UNEDP makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                The materials on Amnesty International's website are provided "as is". Amnesty International makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-900">4. Limitations</h2>
               <p className="text-gray-700">
-                In no event shall UNEDP or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on UNEDP's website.
+                In no event shall Amnesty International or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Amnesty International's website.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-900">5. Accuracy of Materials</h2>
               <p className="text-gray-700">
-                The materials appearing on UNEDP's website could include technical, typographical, or photographic errors. UNEDP does not warrant that any of the materials on our website are accurate, complete, or current.
+                The materials appearing on Amnesty International's website could include technical, typographical, or photographic errors. Amnesty International does not warrant that any of the materials on our website are accurate, complete, or current.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-900">6. Materials and Content</h2>
               <p className="text-gray-700">
-                UNEDP has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by UNEDP of the site. Use of any such linked website is at the user's own risk.
+                Amnesty International has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Amnesty International of the site. Use of any such linked website is at the user's own risk.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-900">7. Modifications</h2>
               <p className="text-gray-700">
-                UNEDP may revise these terms of use for our website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of use.
+                Amnesty International may revise these terms of use for our website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of use.
               </p>
             </section>
 
