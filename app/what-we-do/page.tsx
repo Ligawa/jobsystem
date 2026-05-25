@@ -1,105 +1,99 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Leaf, Zap, Building2, Heart, Users, Scale, Lightbulb, Globe2 } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "What We Do | Amnesty International",
-  description: "Explore Amnesty International's work defending human rights, supporting communities, and campaigning for justice worldwide.",
+  description: "Explore Amnesty International's work defending human rights, exposing abuses, supporting survivors, and campaigning for justice worldwide.",
 }
 
-const thematicAreas = [
+const workAreas = [
   {
-    title: "Sustainable Development",
-    description: "Helping countries achieve the 2030 Agenda through integrated solutions that address poverty, inequality, and environmental sustainability.",
-    icon: Leaf,
-    color: "bg-green-600",
-    href: "/what-we-do/sustainable-development",
+    title: "Research & Investigation",
+    description: "We investigate human rights abuses with rigorous fact-finding and documentation. Our researchers gather evidence of violations and crimes against humanity to expose the truth and hold perpetrators accountable.",
+    image: "/images/amnesty-research-investigation.jpg",
+    href: "/issues",
     highlights: [
-      "Supporting national SDG implementation strategies",
-      "Strengthening statistical capacity for SDG monitoring",
-      "Financing sustainable development solutions",
+      "Documenting human rights violations",
+      "Investigating war crimes and crimes against humanity",
+      "Publishing evidence-based reports",
     ],
   },
   {
-    title: "Climate & Environment",
-    description: "Supporting countries in climate adaptation, mitigation, and the transition to sustainable energy and nature-based solutions.",
-    icon: Zap,
-    color: "bg-blue-600",
-    href: "/issues/climate",
+    title: "Global Advocacy Campaigns",
+    description: "We mobilize millions of supporters worldwide to demand change. Our campaigns target governments, corporations, and institutions to uphold human rights and protect the vulnerable from abuse.",
+    image: "/images/amnesty-advocacy-campaign.jpg",
+    href: "/news",
     highlights: [
-      "Nationally Determined Contributions support",
-      "Climate finance and green economy",
-      "Nature-based solutions and biodiversity",
+      "Organizing global campaigns for justice",
+      "Mobilizing public pressure for change",
+      "Engaging policymakers and decision-makers",
     ],
   },
   {
-    title: "Democratic Governance",
-    description: "Building effective, accountable, and inclusive institutions that deliver for people and uphold human rights.",
-    icon: Building2,
-    color: "bg-amber-600",
-    href: "/issues/governance",
+    title: "Rapid Response & Protection",
+    description: "When human rights defenders face threats, we act immediately. We provide urgent support to protect activists, journalists, and vulnerable people at risk of violence and persecution.",
+    image: "/images/amnesty-rapid-response.jpg",
+    href: "/issues",
     highlights: [
-      "Rule of law and access to justice",
-      "Anti-corruption and transparency",
-      "Electoral support and civic engagement",
+      "Protecting human rights defenders in danger",
+      "Providing emergency legal assistance",
+      "Securing asylum for persecuted activists",
     ],
   },
   {
-    title: "Crisis Prevention & Response",
-    description: "Helping communities prevent crises, respond effectively when they occur, and build back better.",
-    icon: Heart,
-    color: "bg-red-600",
-    href: "/issues/crisis",
+    title: "Community Support & Solidarity",
+    description: "We stand with communities affected by human rights violations. We provide psychosocial support, legal assistance, and long-term solidarity with survivors and their families seeking justice.",
+    image: "/images/amnesty-community-support.jpg",
+    href: "/issues",
     highlights: [
-      "Early warning and prevention",
-      "Humanitarian-development nexus",
-      "Disaster risk reduction",
+      "Supporting survivors of torture and abuse",
+      "Providing legal aid and advocacy",
+      "Building community resilience",
     ],
   },
   {
-    title: "Gender Equality",
-    description: "Advancing gender equality and women's empowerment as a core accelerator of sustainable development.",
-    icon: Users,
-    color: "bg-pink-600",
-    href: "/issues/gender",
+    title: "Digital Rights & Freedom",
+    description: "We fight surveillance, censorship, and digital repression. We campaign for privacy, freedom of expression, and protection from state and corporate surveillance online.",
+    image: "/images/amnesty-digital-rights.jpg",
+    href: "/issues",
     highlights: [
-      "Women's economic empowerment",
-      "Gender-responsive governance",
-      "Ending gender-based violence",
+      "Combating digital surveillance",
+      "Protecting online freedom of expression",
+      "Fighting censorship and internet restrictions",
     ],
   },
   {
-    title: "Poverty & Inequality",
-    description: "Tackling the root causes of poverty and reducing inequalities to ensure no one is left behind.",
-    icon: Scale,
-    color: "bg-indigo-600",
-    href: "/issues/poverty",
+    title: "Thematic Campaigns",
+    description: "We tackle human rights violations across key areas: gender-based violence, refugee and migrant rights, LGBTQ+ equality, indigenous rights, and freedom from torture and detention.",
+    image: "/images/amnesty-womens-rights.jpg",
+    href: "/issues",
     highlights: [
-      "Social protection systems",
-      "Inclusive growth strategies",
-      "Multidimensional poverty analysis",
+      "Ending violence against women",
+      "Protecting refugee and migrant rights",
+      "Fighting for equality and inclusion",
     ],
   },
 ]
 
 const approaches = [
   {
-    title: "Signature Solutions",
-    description: "Six integrated solutions that drive development impact: poverty and inequality, governance, resilience, environment, energy, and gender equality.",
-    icon: Lightbulb,
+    title: "Research",
+    description: "We investigate and document human rights violations with rigorous methodology and evidence-based reporting to expose the truth.",
+    image: "/images/amnesty-research-investigation.jpg",
   },
   {
-    title: "SDG Integration",
-    description: "Leveraging the interconnected nature of the SDGs to maximize development impact through integrated approaches.",
-    icon: Globe2,
+    title: "Campaigning",
+    description: "We mobilize global activism and public pressure to demand accountability and lasting change from governments and institutions.",
+    image: "/images/amnesty-advocacy-campaign.jpg",
   },
   {
-    title: "Innovation",
-    description: "Using frontier technologies and innovative financing to accelerate development results and reach those furthest behind.",
-    icon: Zap,
+    title: "Direct Support",
+    description: "We provide emergency assistance and long-term solidarity to survivors and human rights defenders facing threats and persecution.",
+    image: "/images/amnesty-community-support.jpg",
   },
 ]
 
@@ -107,14 +101,14 @@ export default function WhatWeDoPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-[#0468B1] py-20 lg:py-32">
+      <section className="relative bg-black py-20 lg:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl text-white">
-            <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl text-balance">
+            <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl text-balance text-yellow-400">
               What We Do
             </h1>
             <p className="mt-6 text-xl text-white/90 leading-relaxed">
-              Amnesty International works across research, advocacy, and rapid response to defend rights, support communities, and demand justice around the world.
+              We investigate human rights abuses, campaign for justice, and support survivors and defenders around the world. Amnesty International stands with the oppressed and demands accountability from those in power.
             </p>
           </div>
         </div>
@@ -126,22 +120,28 @@ export default function WhatWeDoPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
               <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance">
-                Integrated Action for Human Rights
+                Our Integrated Approach
               </h2>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                Human rights challenges are interconnected. Repression, discrimination, abuse, and impunity reinforce one another. That's why Amnesty International takes an integrated approach, combining research, campaigning, and direct support to maximize impact.
+                Human rights violations are systematic and interconnected. That's why Amnesty International combines research, campaigning, and direct support to deliver maximum impact. We expose abuses, mobilize global activism, and stand with those demanding their rights.
               </p>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                Our global network gives us unique insight into local contexts while allowing us to scale practical solutions and sustained advocacy.
+                Our global network of activists, researchers, and supporters gives us unique power to hold governments and institutions accountable, regardless of borders or politics.
               </p>
+              <Button asChild className="mt-6 bg-yellow-400 text-black hover:bg-yellow-300 font-semibold">
+                <Link href="#focus-areas">
+                  Explore Our Work
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
             <div className="flex justify-center">
               <Image
-                src="/images/sdg-wheel.svg"
-                alt="Sustainable Development Goals"
+                src="/images/amnesty-integrated-solutions.jpg"
+                alt="Amnesty International's integrated approach to human rights"
                 width={400}
                 height={400}
-                className="w-full max-w-md"
+                className="w-full max-w-md rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -152,22 +152,28 @@ export default function WhatWeDoPage() {
       <section className="py-16 lg:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold text-foreground md:text-4xl">Our Approach</h2>
+            <h2 className="text-3xl font-bold text-foreground md:text-4xl">How We Work</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              We combine global expertise with local knowledge to deliver lasting development results.
+              Amnesty International combines three complementary approaches to maximize human rights impact globally.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
             {approaches.map((approach) => (
-              <Card key={approach.title} className="text-center border-0 shadow-lg">
-                <CardHeader>
-                  <div className="mx-auto mb-4 rounded-full bg-primary/10 p-4">
-                    <approach.icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-xl">{approach.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
+              <Card key={approach.title} className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image
+                    src={approach.image}
+                    alt={approach.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/30" />
+                  <h3 className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-xl font-bold text-white">
+                    {approach.title}
+                  </h3>
+                </div>
+                <CardContent className="pt-6">
                   <CardDescription className="text-base leading-relaxed">
                     {approach.description}
                   </CardDescription>
@@ -178,21 +184,27 @@ export default function WhatWeDoPage() {
         </div>
       </section>
 
-      {/* Thematic Areas */}
+      {/* Work Areas */}
       <section id="focus-areas" className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold text-foreground md:text-4xl">Our Focus Areas</h2>
+            <h2 className="text-3xl font-bold text-foreground md:text-4xl">Our Work Areas</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Explore the key thematic areas where Amnesty International is driving change and protecting human rights.
+              Discover how Amnesty International defends human rights across key focus areas globally.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {thematicAreas.map((area) => (
+            {workAreas.map((area) => (
               <Card key={area.title} className="group overflow-hidden border-0 shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className={`${area.color} p-4`}>
-                  <area.icon className="h-10 w-10 text-white" />
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image
+                    src={area.image}
+                    alt={area.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
                 </div>
                 <CardHeader>
                   <CardTitle className="text-xl">{area.title}</CardTitle>
@@ -201,17 +213,17 @@ export default function WhatWeDoPage() {
                   <CardDescription className="text-base leading-relaxed mb-4">
                     {area.description}
                   </CardDescription>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-sm text-muted-foreground mb-6">
                     {area.highlights.map((highlight) => (
                       <li key={highlight} className="flex items-start gap-2">
-                        <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
+                        <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-yellow-400 flex-shrink-0" />
                         {highlight}
                       </li>
                     ))}
                   </ul>
                   <Link 
                     href={area.href}
-                    className="mt-6 inline-flex items-center text-sm font-semibold text-primary hover:underline"
+                    className="inline-flex items-center text-sm font-semibold text-yellow-600 hover:text-yellow-700"
                   >
                     Learn more <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
@@ -223,38 +235,38 @@ export default function WhatWeDoPage() {
       </section>
 
       {/* Impact Section */}
-      <section className="py-16 lg:py-24 bg-[#0468B1] text-white">
+      <section className="py-16 lg:py-24 bg-black text-white border-t-4 border-yellow-400">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold md:text-4xl">Our Impact</h2>
+            <h2 className="text-3xl font-bold md:text-4xl text-yellow-400">Our Global Impact</h2>
             <p className="mt-4 text-lg text-white/90">
-              Real results from our work around the world.
+              Millions of people worldwide fighting for justice, freedom, and dignity.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="text-center">
-              <div className="text-5xl font-bold">86M</div>
-              <p className="mt-2 text-white/80">People supported to escape multidimensional poverty</p>
+              <div className="text-5xl font-bold text-yellow-400">10M+</div>
+              <p className="mt-2 text-white/80">Activists and supporters globally</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold">53</div>
-              <p className="mt-2 text-white/80">Countries supported on climate adaptation</p>
+              <div className="text-5xl font-bold text-yellow-400">190+</div>
+              <p className="mt-2 text-white/80">Countries with Amnesty presence</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold">95</div>
-              <p className="mt-2 text-white/80">Elections supported with technical assistance</p>
+              <div className="text-5xl font-bold text-yellow-400">100+</div>
+              <p className="mt-2 text-white/80">Countries investigated annually</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold">2.1M</div>
-              <p className="mt-2 text-white/80">Jobs created through livelihood programs</p>
+              <div className="text-5xl font-bold text-yellow-400">100+</div>
+              <p className="mt-2 text-white/80">Campaigns active every year</p>
             </div>
           </div>
 
           <div className="mt-12 text-center">
-            <Button asChild size="lg" className="bg-white text-[#0468B1] hover:bg-white/90">
-              <Link href="/resources/annual-report">
-                Read Our Annual Report
+            <Button asChild size="lg" className="bg-yellow-400 text-black hover:bg-yellow-300 font-semibold">
+              <Link href="/news">
+                Read Our Latest Reports
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -265,13 +277,13 @@ export default function WhatWeDoPage() {
       {/* Call to Action */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-foreground md:text-4xl">Explore Our Work by Country</h2>
+          <h2 className="text-3xl font-bold text-foreground md:text-4xl">Join the Movement</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            See how we're making a difference in specific countries and regions around the world.
+            Become part of the global Amnesty International movement fighting for human rights, justice, and dignity worldwide.
           </p>
-          <Button asChild size="lg" className="mt-8 bg-[#0468B1] hover:bg-[#035a9c]">
-            <Link href="/countries">
-              View Country Programs
+          <Button asChild size="lg" className="mt-8 bg-yellow-400 text-black hover:bg-yellow-300 font-semibold">
+            <Link href="/issues">
+              Take Action Now
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
