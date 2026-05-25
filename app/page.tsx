@@ -123,39 +123,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SDG Wheel Section */}
-      <section className="py-16 lg:py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-foreground md:text-4xl text-balance">
-                Advancing Human Rights Through Action
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                Amnesty International investigates abuse, supports people in danger, and campaigns for change wherever human rights are under threat. Our work spans research, advocacy, and direct support for communities around the world.
-              </p>
-              <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                We stand with people facing repression, violence, and injustice, and we push governments and institutions to uphold their responsibilities.
-              </p>
-              <Button asChild className="mt-6 bg-[#0468B1] hover:bg-[#035a9c]">
-                <Link href="/what-we-do">
-                  Learn About Our Approach
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
-            <div className="flex justify-center">
-              <Image
-                src="/images/sdg-wheel.svg"
-                alt="Human rights campaign illustration"
-                width={400}
-                height={400}
-                className="w-full max-w-md"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Focus Areas */}
       <section className="py-16 lg:py-24">
