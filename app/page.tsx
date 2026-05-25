@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Users, Globe2, Leaf, Building2, Heart, Zap } from "lucide-react"
+import { ArrowRight, Users, Globe2, Building2, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -13,32 +13,28 @@ const impactStats = [
 
 const focusAreas = [
   {
-    title: "Sustainable Development",
-    description: "Helping countries achieve the 2030 Agenda and the Sustainable Development Goals.",
-    icon: Leaf,
-    href: "/what-we-do#sustainable-development",
-    color: "bg-green-600",
+    title: "Human Rights Defense",
+    description: "Defending human rights globally, investigating abuses, and standing with those fighting for justice and dignity.",
+    image: "/images/amnesty-human-rights-defense.jpg",
+    href: "/what-we-do",
   },
   {
-    title: "Climate Action",
-    description: "Supporting climate adaptation, mitigation, and the transition to clean energy.",
-    icon: Zap,
-    href: "/issues/climate",
-    color: "bg-blue-600",
+    title: "Climate Justice",
+    description: "Fighting for the rights of communities on the frontlines of climate change and demanding corporate accountability.",
+    image: "/images/amnesty-climate-justice.jpg",
+    href: "/issues",
   },
   {
-    title: "Governance",
-    description: "Strengthening democratic governance and building effective, accountable institutions.",
-    icon: Building2,
-    href: "/issues/governance",
-    color: "bg-amber-600",
+    title: "Governance & Accountability",
+    description: "Demanding government accountability, rule of law, and freedom from repression and authoritarian abuse.",
+    image: "/images/amnesty-governance.jpg",
+    href: "/issues",
   },
   {
-    title: "Crisis Response",
-    description: "Responding to crises and building resilience for communities worldwide.",
-    icon: Heart,
-    href: "/issues/crisis",
-    color: "bg-red-600",
+    title: "Crisis & Emergency Support",
+    description: "Providing emergency assistance to victims of conflict, humanitarian crises, and protecting the vulnerable.",
+    image: "/images/amnesty-crisis-response.jpg",
+    href: "/issues",
   },
 ]
 
@@ -139,19 +135,28 @@ export default function HomePage() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {focusAreas.map((area) => (
               <Card key={area.title} className="group overflow-hidden border-0 shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className={`${area.color} p-4`}>
-                  <area.icon className="h-10 w-10 text-white" />
+                <div className="relative h-40 w-full overflow-hidden bg-black">
+                  <Image
+                    src={area.image}
+                    alt={area.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
                 </div>
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-xl">{area.title}</CardTitle>
+                  <CardTitle className="text-lg">{area.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base leading-relaxed">{area.description}</CardDescription>
-                  <Link 
-                    href={area.href} 
-                    className="mt-4 inline-flex items-center text-sm font-semibold text-primary hover:underline"
+                  <CardDescription className="text-sm leading-relaxed">
+                    {area.description}
+                  </CardDescription>
+                  <Link
+                    href={area.href}
+                    className="mt-4 inline-flex items-center text-sm font-semibold text-yellow-600 hover:text-yellow-700"
                   >
-                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                    Learn more
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </Link>
                 </CardContent>
               </Card>
@@ -212,39 +217,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Report */}
+      {/* Featured Campaign Report */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center bg-card rounded-2xl p-8 lg:p-12 shadow-lg">
+          <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center bg-black rounded-2xl p-8 lg:p-12 shadow-lg">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
               <Image
-                src="/images/mpi-2025-coverpage-crop.jpg"
-                alt="Multidimensional Poverty Index 2025 Report Cover"
+                src="/images/amnesty-poverty-inequality.jpg"
+                alt="Amnesty International fighting poverty and inequality for human rights"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
-              <span className="inline-block rounded-full bg-primary/10 px-4 py-1 text-sm font-semibold text-primary">
-                Featured Report
+              <span className="inline-block rounded-full bg-yellow-400 px-4 py-1 text-sm font-semibold text-black">
+                Featured Campaign
               </span>
-              <h2 className="mt-4 text-2xl font-bold text-foreground md:text-3xl text-balance">
-                Global Multidimensional Poverty Index 2025
+              <h2 className="mt-4 text-2xl font-bold text-yellow-400 md:text-3xl text-balance">
+                Fighting Poverty & Inequality for Human Rights
               </h2>
-              <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-                The latest data reveals both progress and challenges in the fight against multidimensional 
-                poverty. Explore trends, regional insights, and policy recommendations for accelerating 
-                poverty reduction worldwide.
+              <p className="mt-4 text-lg text-white/90 leading-relaxed">
+                Poverty is not just an economic issue—it is a human rights crisis. Amnesty International fights systemic inequality and demands that governments protect the rights and dignity of the world's most vulnerable people.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-300 font-semibold">
-                  <Link href="/resources/mpi-2025">
-                    Read the Report
+                  <Link href="/issues/poverty">
+                    Learn About Our Campaign
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" className="border-yellow-400 text-yellow-600 hover:bg-yellow-50">
-                  <Link href="/resources">Browse All Publications</Link>
+                <Button asChild variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400/10">
+                  <Link href="/news">Read Our Reports</Link>
                 </Button>
               </div>
             </div>
@@ -287,14 +290,14 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-[#5a7247]/80" />
+          <div className="absolute inset-0 bg-black/70" />
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">
           <h2 className="text-3xl font-bold md:text-5xl text-balance">Stories of Progress and Hope</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90">
             Discover the human stories behind our work—real people, real impact, real change.
           </p>
-          <Button asChild size="lg" className="mt-8 bg-white text-[#5a7247] hover:bg-white/90">
+          <Button asChild size="lg" className="mt-8 bg-yellow-400 text-black hover:bg-yellow-300 font-semibold">
             <Link href="/news">
               Explore Good Stories
               <ArrowRight className="ml-2 h-4 w-4" />
